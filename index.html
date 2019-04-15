@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Solve SUDOKU</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_lineStart">
+
+        </div>
+        <div class="header_content">
+            <div class="header_content_text">
+                <span class="content_text_solve">Solve</span> <span class="content_text_sudoku">SUDOKU</span>
+            </div>
+        </div>
+        <div class="header_lineEnd">
+
+        </div>
+    </div>
+      <div class="content" id="inputArea">  
+     </div>  
+    <div class="footer">
+        <button type="submit" class="button button2" id="submitButon" onclick="getValues();this.disabled=true;">Solve It</button><br>
+    </div>
+    <span id="msg" >Refresh the page to solve another one</span>
+</body>
+<script src="inputDom.js"></script>
+<script src="solver.js"></script>
+</html>

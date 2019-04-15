@@ -1,0 +1,145 @@
+body{
+    background-color: #0077af;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 120px 400px 20px ;
+    width:98%;
+    height:100%;
+}
+.header{
+    grid-column: 1/-1;
+    grid-row:1/2;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.header_content{
+grid-column: 2/3;
+    /* background-color: black;
+    border-radius: 0px 0px 50% 50%; */
+
+}
+.header_content_text{
+    font-size: 180%;
+    position: relative;
+    top: 8%;
+    left: 25%;
+    
+}
+.content_text_solve{
+    font-family:    cursive;
+    display: block;
+    position: relative;
+    left:18%;
+}
+.content_text_sudoku{
+left:15%;
+position: relative;
+}
+.footer{
+    grid-row: 3/-1;
+    grid-column: 4/5;
+}
+.content{
+    grid-column: 2/5;
+    grid-row: 2/3;
+    /* background-color: blue;  */
+    padding: 0% 0% 0% 16%;
+
+}
+input{
+    width:5%;
+    height:80%;
+    margin: -2px;
+    text-align: center; 
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#inputTag{
+    width: 9%;
+    height: 9%;
+    font-size: 120%;
+}
+#input_background{
+    background-color:  slategrey;
+    width:80%;
+    height:100%;
+    padding-left: 8%;
+    padding-top: 2%; 
+}
+.button {
+    /* background-color: #4CAF50; Green */
+    grid-row: 3/4;
+    position: relative;
+    top:10px;
+    left: 20%;
+    border: none;
+    color: white;
+    padding: 4% 8%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    margin: 2% 1%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button2 {
+  background-color: white; 
+   color: #0077af;  
+  border: 2px solid #0077af;
+}
+.button2:hover {
+    background-color:slategrey;
+    color: white;
+  }
+  .solvedValue{
+      color: tomato;
+  }
+  #msg{
+      grid-row: 4/-1;
+    grid-column: 3/-1;
+    position: relative;  
+}
+  @media screen and (max-width: 600px) {
+    body{
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 120px 400px 50px ; 
+    }
+    .content{
+        grid-column: 1/-1;
+        grid-row: 2/3;
+        padding: 0px;
+    }
+    #input_background{
+        width: 85%;
+        height: 100%;
+        padding-left: 9%;
+        padding-top: 2%;
+        margin-left: 10px;
+        padding-top: 30px;
+    }
+    #inputTag {
+        width: 7%;
+        height: 7%;
+        margin:0px;
+    }
+    .button{
+        top:50px;
+        grid-row:3/4;
+    }
+    #msg{
+        top:50px;
+        grid-column: 1/-1;
+        position: relative;
+        left:50px;   
+    }
+    .header_content_text{
+        left: 0%;
+        
+    }
+  }
